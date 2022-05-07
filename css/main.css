@@ -1,0 +1,259 @@
+:root {
+  /* font */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* colors */
+  --main-white-cl: #ffffff;
+  --accent-cl: #2196f3;
+
+  /* text colors */
+  --main-txt-cl: #757575;
+  --title-txt-cl: #212121;
+  --accent-cl-white: rgba(255, 255, 255, 0.6);
+  --accent-cl-dark: #000000;
+
+  /* background colors */
+  --main-bg-cl: #e5e5e5;
+  --secondary-bg-cl: #f5f4fa;
+  --dark-bg-cl: #2f303a;
+}
+
+body {
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: var(--main-txt-cl);
+  background-color: var(--main-white-cl);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link {
+  text-decoration: none;
+  /* color: currentColor; */
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/*
+============================
+| Logo / Логотип компании
+============================
+*/
+.logo {
+  color: var(--accent-cl);
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.84;
+  text-decoration: none;
+}
+.accent-dark {
+  color: var(--accent-cl-dark);
+}
+.accent-white {
+  color: var(--main-white-cl);
+}
+
+/*
+============================
+| Header section / Шапка сайта
+============================
+*/
+.header {
+  background-color: var(--main-white-cl);
+}
+
+.header .link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav .link {
+  color: var(--title-txt-cl);
+}
+.nav .link.current {
+  color: var(--accent-cl);
+}
+.accent.link {
+  color: var(--main-txt-cl);
+}
+
+/*
+============================
+| Hero section / Герой
+============================
+*/
+
+.hero {
+  color: var(--main-white-cl);
+  background-color: var(--dark-bg-cl);
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero .btn {
+  background-color: #2196f3;
+  color: var(--main-white-cl);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+  background-color: #188ce8;
+}
+
+/*
+============================
+| About section / Особенности компании
+============================
+*/
+
+.about .title {
+  color: var(--title-txt-cl);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about .uppertitle {
+  line-height: 1.7;
+}
+
+/*
+============================
+| Gallery section / Чем мы занимаемся
+============================
+*/
+
+.section-title {
+  color: var(--title-txt-cl);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.86;
+  text-align: center;
+}
+/*
+============================
+| Team section / Наша команда
+============================
+*/
+.team {
+  background-color: var(--secondary-bg-cl);
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team .item {
+  background-color: var(--main-white-cl);
+}
+.team .title {
+  color: var(--title-txt-cl);
+
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.team-position {
+  text-align: center;
+}
+
+/*
+============================
+| Footer section / Подвал 
+============================
+*/
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+.address .link {
+  color: var(--main-white-cl);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.address .accent.link {
+  color: var(--accent-cl-white);
+}
+
+/* 
+Portfolio
+============================
+| Filters section / Фильтры
+============================
+*/
+
+.filters .btn {
+  color: var(--title-text-cl);
+  background-color: var(--secondary-bg-cl);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.filters .btn:hover,
+.filters .btn:focus {
+  color: var(--main-white-cl);
+  background-color: var(--accent-cl);
+}
+
+/* 
+============================
+| Projects section / Проекты
+============================
+*/
+
+.projects .section-title {
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+}
+
+.projects-position {
+  color: var(--main-txt-cl);
+
+  font-size: 16px;
+  line-height: 1.88;
+}
+.projects .item {
+  background-color: var(--main-white-cl);
+}
