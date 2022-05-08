@@ -113,6 +113,7 @@ p {
 ============================
 */
 .header {
+  border-bottom: 1px solid #ececec;
   background-color: var(--main-white-cl);
 }
 
